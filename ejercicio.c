@@ -10,3 +10,6 @@ struct persona
         float promedio;
     }alumno[3];
 
+int main(int argc, char const* argv[]){
+    return 0;
+}
