@@ -13,18 +13,18 @@ struct persona
 
 int main(int argc, char const* argv[]){
 //secuencia para que el usuario ingrese los datos por cada alunmo
-    for (int i = 1; i <= 3; i++)
+    for (int i = 0; i < 3; i++)
     {
-        printf("Escribir el nombre del alumno %i: ", i);
+        printf("Escribir el nombre del alumno %i: ", i+1);
         gets(alumno[i].nombre);
-        printf("Escriba la direccion del alumno %i: ", i);
+        printf("Escriba la direccion del alumno %i: ", i+1);
         gets(alumno[i].direccion);
-        printf("Escribir la carrera del alumno %i: ", i);
-        gets(alumno[3].carrera);
-        printf("Escribir la edad de la persona %i: ", i);
-        scanf("%s", alumno[i].edad);
-        printf("Escribir el promedio de la persona %i: ", i);
-        scanf("%s", alumno[i].promedio);
+        printf("Escribir la carrera del alumno %i: ", i+1);
+        gets(alumno[i].carrera);
+       printf("Escribir la edad de la persona %i: ", i+1);
+        scanf("%d", &alumno[i].edad);
+        printf("Escribir el promedio de la persona %i: ", i+1);
+        scanf("%f", &alumno[i].promedio);
     }
 //imprecion de los datos
     for (int i = 1; i <= 3; i++)
@@ -35,7 +35,7 @@ int main(int argc, char const* argv[]){
         puts(alumno[i].direccion);
         printf("Carrera: ");
         puts(alumno[i].carrera);
-        printf("Edad: %i", alumno[i].edad);
+        printf("Edad: %d", alumno[i].edad);
         printf("Promedio: %f", alumno[i].promedio);
 
     }
